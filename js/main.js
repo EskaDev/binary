@@ -1,1 +1,1 @@
-function ibg(){$.each($(".ibg"),(function(i,g){$(this).find("img").length>0&&$(this).css("background-image",'url("'+$(this).find("img").attr("src")+'")')}))}ibg();
+function ibg(){$.each($(".ibg"),(function(i,t){$(this).find("img").length>0&&$(this).css("background-image",'url("'+$(this).find("img").attr("src")+'")')}))}ibg(),$(".filter__item").click((function(i){var t=$(this).data("filter");return 1==t?$(".portfolio__column").show():($(".portfolio__column").hide(),$(".portfolio__column.f_"+t).show()),$(".filter__item").removeClass("active"),$(this).addClass("active"),!1}));
